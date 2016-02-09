@@ -23,6 +23,24 @@ $(document).ready(function(){
       }
     ];
 
-    // Get started here!
+    var productTemplate = $('template#product').html();
 
+    for(var i = 0; i < products.length; i++){
+
+      var newItem = $(productTemplate);
+
+      $('img', newItem).attr('src', $(.text(products[i].imageSrc);
+      $('.blue', newItem).text(products[i].name);
+      $('.manufacturer', newItem).text(products[i].manufacturer);
+      $('h3', newItem).text(products[i].description)
+      $('.mobile-price', newItem).text(products[i].price);
+
+      $('.products').append(newItem);
+    }
+
+      $('move').on('.submit', function(event) {
+        $('.saved').append(this);
+        if ('.cart-total h1.orange' === 'Save for later') {
+          $('.cart-total h1.orange').text('Add to cart')
+      } else $('.cart-total h1.orange').text('Save for later')
   });
