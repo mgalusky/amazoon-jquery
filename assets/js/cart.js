@@ -53,7 +53,7 @@ $(document).ready(function(){
           //There are no products in the saved for later section
           //Show H3 tag for saved for later empty
           $('.saved .empty').show();
-          // $('.headers').hide();
+          // $('.headers').hide();  
 
         } else {
           // There ARE products in teh saved for later section
